@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: ropo;
+            src: url(ropo.otf);
+        }
+
+        .img {
+            position: relative;
+            background-image: url(assin.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 1000px;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            font-family: ropo;
+        }
+
+        .imgcol {
+            background-color: blueviolet;
+            opacity: 60%;
+            height: 1000px;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+        }
+
+        .nav .logo {
+            position: absolute;
+            top: 4%;
+            left: 13%;
+        }
+
+        .text1 {
+            position: absolute;
+            top: 1%;
+            left: 16%;
+            color: white;
+            font-size: 20px;
+        }
+
+        .midd {
+            position: absolute;
+            display: inline;
+            text-align: center;
+            top: 6%;
+            left: 40%;
+            color: white;
+            font-size: 15px;
+            word-spacing: 10px;
+            text-decoration: none;
+
+        }
+
+        .house {
+            text-decoration: none;
+            color: white;
+        }
+
+        .about {
+            text-decoration: none;
+            color: white;
+        }
+
+        .courses {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .pages {
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact {
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo2 {
+            position: absolute;
+            top: 6%;
+            float: right;
+            right: 23%;
+        }
+
+        .logo3 {
+            position: absolute;
+            top: 6%;
+            float: right;
+            right: 15%;
+            color: white;
+            font-size: 12px;
+
+        }
+
+        .logo4 {
+            position: absolute;
+            top: 6%;
+            float: right;
+            right: 11%;
+        }
+
+        .text2 {
+            position: absolute;
+            top: 21%;
+            left: 27%;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .text3 {
+            position: absolute;
+            top: 44%;
+            left: 34%;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .the-btn {
+            position: absolute;
+            top: 55%;
+            left: 43%;
+        }
+
+        .the-btn button {
+
+
+            background-color: rgb(235, 120, 158);
+            border: 0;
+            border-radius: 56px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            outline: 0;
+            padding: 16px 21px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: all .3s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-71:before {
+            background-color: initial;
+            background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+            border-radius: 125px;
+            content: "";
+            height: 50%;
+            left: 4%;
+            opacity: .5;
+            position: absolute;
+            top: 0;
+            transition: all .3s;
+            width: 92%;
+        }
+
+        .button-71:hover {
+            box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+            transform: scale(1.05);
+        }
+
+        .one {
+            position: absolute;
+            top: 35%;
+            left: 95%;
+            color: white;
+
+        }
+
+        .two {
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            color: white;
+        }
+
+        .wave {
+            position: relative;
+            margin-top: 600px;
+
+        }
+
+        .after-text1 {
+            text-align: center;
+            font-family: ropo;
+            font-size: 15px;
+        }
+
+        .after-text2 {
+            text-align: center;
+            font-family: ropo;
+            font-size: 25px;
+        }
+
+        .btn-1 {
+            align-items: center;
+            appearance: none;
+            background-color: rgb(134, 139, 224);
+            background-image: linear-gradient(1deg, #4F58FD, rgb(134, 139, 224)99%);
+            background-size: calc(100% + 20px) calc(100% + 20px);
+            border-radius: 100px;
+            border-width: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: CircularStd, sans-serif;
+            font-size: 10px;
+            height: auto;
+            justify-content: center;
+            line-height: 1.5;
+            padding: 6px 20px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color .2s, background-position .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+
+        .button-21:active,
+        .button-21:focus {
+            outline: none;
+        }
+
+        .button-21:hover {
+            background-position: -20px -20px;
+        }
+
+        .button-21:focus:not(:active) {
+            box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+        }
+
+        .btn2 {
+            align-items: center;
+            appearance: none;
+            background-color: rgb(134, 139, 224);
+            background-image: linear-gradient(1deg, #4F58FD, rgb(134, 139, 224) 99%);
+            background-size: calc(100% + 20px) calc(100% + 20px);
+            border-radius: 100px;
+            border-width: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: CircularStd, sans-serif;
+            font-size: 10px;
+            height: auto;
+            justify-content: center;
+            line-height: 1.5;
+            padding: 6px 20px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color .2s, background-position .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: top;
+            white-space: nowrap;
+        }
+
+        .button-21:active,
+        .button-21:focus {
+            outline: none;
+        }
+
+        .button-21:hover {
+            background-position: -20px -20px;
+        }
+
+        .button-21:focus:not(:active) {
+            box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+        }
+        .new{
+            position: absolute;
+            top: 8%;
+            left: 82%;
+            z-index: 1;
+            color: white;
+            font-size: 14px;
+            font-family: ropo;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+        }
+        .free{
+            position: absolute;
+            top: 8%;
+            left: 82%;
+            z-index: 1;
+            color: white;
+            font-size: 14px;
+            font-family: ropo;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+        }
+        .pic1 {
+            position: relative;
+            height: 370px;
+            width: 300px;
+            /* border-style: groove; */
+            border-color: rgb(255, 247, 247);
+            /* top: 7%; */
+            /* left: 0%; */
+            font-size: 12px;
+        }
+        .pic2 {
+            position: relative;
+            height: 370px;
+            width: 300px;
+            /* bottom: 30%; */
+            /* left: 10%; */
+            font-size: 12px;
+        }
+
+        .pic3 {
+            position: relative;
+            height: 370px;
+            width: 300px;
+            /* bottom: 67%; */
+            /* left: 15%; */
+            font-size: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            font-family: ropo;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="imgcol">
+                <div class="nav">
+                    <div class="logo">
+                        <i class="fa-regular fa-gem fa-2x" style="color: #eb78a1;"></i>
+                    </div>
+                    <div class="text1">
+                        <h2>Study Course</h2>
+                        Journey to success
+                    </div>
+
+                    <div class="midd">
+                        <a href="#" class="house">House</a>
+                        <a href="#" class="about">About</a>
+                        <a href="#" class="courses">Courses</a>
+                        <a href="#" class="pages">Pages<i class="fa-solid fa-chevron-down fa-xs"></i></a>
+                        <a href="#" class="contact">Contact </a>
+                    </div>
+
+                    <div class="logo2">
+                        <i class="fa-solid fa-magnifying-glass fa-1xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="logo3">
+                        <i class="fa-solid fa-user fa-1xl" style="color: #ffffff;"></i> Login
+                    </div>
+                    <div class="logo4">
+                        <i class="fa-regular fa-moon fa-1x" style="color: #dde1e9;"></i>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: -870px;">
+            <div class="mdl">
+                <div class="text2">
+                    <h1>50% Discount on all Popular <br>
+                        Courses</h1>
+                </div>
+                <div class="text3">
+                    Take the first step to your journey to success with us
+                </div>
+                <div class="the-btn">
+                    <button>ready to get started?</button>
+                </div>
+                <div class="one">
+                    <i class="fa-solid fa-angle-right fa-1xl"></i>
+                </div>
+                <div class="two">
+                    <i class="fa-solid fa-angle-left fa-1xl"></i>
+                </div>
+
+            </div>
+
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="rgb(255,255,255)" fill-opacity="1"
+                        d="M0,192L80,192C160,192,320,192,480,160C640,128,800,64,960,64C1120,64,1280,128,1360,160L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="after-text1">
+                JOIN OUR LEARN COURSES
+
+            </div>
+            <div class="after-text2">
+                Featured Online Courses
+            </div>
+            <div class="btn-1" style="position: relative;width: 72px; height: 5px; left: 15%;z-index: 1; top:4%;">
+                beginner </div>
+            <div class="btn2" style="position: relative;width: 72px; height: 5px;left: 34%;z-index: 1; top:4%;">
+                beginner </div>
+            
+
+
+
+            <div class="yote"
+                style="display: flex;flex-wrap: wrap; justify-content: center;gap: 1rem;font-family: ropo;">
+
+                <div class="pic1">
+                    <div class="btn1"></div>
+                    <img src="pic1.1.jpg">
+                    <span style="color: #eb78a1;">$35.00</span> <i style="float: right; right: 8%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i> <i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-regular fa-star fa-xs"></i><br>
+                    Open Programming Courses For Everyone:<br>Python<br>
+
+                    <i class="fa-regular fa-clock fa-xs"> 20hrs</i>
+
+                    <i style="float: right; right: 5%; top: 15%;" class="fa-solid fa-user fa-1xl"
+                        style="color:rgb(3, 5, 8) ;"> 50</i><br>
+                    <hr style="width: 100%;"><br>
+                    <img src="starboy.png" style="border-radius: 100%;height: 5%;width: 6%;margin-bottom: -5px;"><span>
+                        by
+                        Olivia in Programming</span>
+                </div>
+
+
+                <div class="pic2">
+                    <img src="pi3.jpg"><span style="color: #eb78a1;">
+                        $0.00</span> <span class="free">FREE</span><i  class="fa-solid fa-bookmark fa-rotate-90 fa fa-6x" style="position:absolute; top: 1%;left:77%;color:  rgb(147,64,233) ;"></i><i style="float: right; right: 8%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i> <i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-regular fa-star fa-xs"></i><br>
+                    Learning to write as a clean and Professional Author<br>
+
+                    <i class="fa-regular fa-clock fa-xs"> 20hrs</i>
+
+                    <i style="float: right; right: 5%; top: 15%;" class="fa-solid fa-user fa-1xl"
+                        style="color:rgb(3, 5, 8) ;"> 50</i><br>
+                    <hr style="width: 100%;"><br>
+                    <img src="martinelli.jpg"
+                        style="border-radius: 100%;height: 5%;width: 6%;margin-bottom: -5px;"><span> by
+                        Isabella in Programming</span>
+
+                </div>
+
+                <div class="pic3">
+                    <img src="pic3.jpg"><span style="color: #eb78a1;">
+                        $49.00</span><span class="new">NEW</span> <i class="fa-solid fa-bookmark fa-rotate-90 fa-6x" style="position:absolute; top: 1%;left:77%; color: rgb(231,74,122);"></i><i style="float: right; right: 8%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i> <i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-solid fa-star fa-xs"></i><i style="float: right; right: 4%; margin-top: 2%;"
+                        class="fa-regular fa-star fa-xs"></i><br>
+                    Learn master JQuery in a short period of time<br>
+
+                    <br>
+
+                    <i class="fa-regular fa-clock fa-xs"> 20hrs</i>
+
+                    <i style="float: right; right: 5%; top: 15%;" class="fa-solid fa-user fa-1xl"
+                        style="color:rgb(3, 5, 8) ;"> 50</i><br>
+                    <hr style="width: 100%;"><br>
+                    <img src="odegaard.jpg" style="border-radius: 100%;height: 5%;width: 6%;margin-bottom: -5px;"><span>
+                        by
+                        William in Programming</span>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Control your personal preference settings to get notified about <br>appropriate courses<span
+                        style="color: #eb78a1;"> View all courses</span> <i class="fa-solid fa-arrow-right fa-1xl"
+                        style="color: #030303;"></i></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
